@@ -1,0 +1,39 @@
+/*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ -=   Timezone Conversion                   -=
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*/
+
+This class implements Timezone datetime conversion functionality.  
+
+There is a simple usage for converting specified datetime into specified timezone.   
+
+This class supports about 200 timezone conversion including some local timezone.   
+This class uses generic PHP functions for conversion.        
+
+Description::
+---------------
+This class provides a simple method to convert between time zones. It simply uses the built-in PHP function(s) which is available in PHP 4.x and higher.
+
+This class supports about 200 timezone conversion including some local timezone around the World.
+
+The TimezoneConversion rules on which this converter is based are to provide you with the most accurate time converter utility on the Net!
+
+
+
+
+Example :
+/**
+require_once('class-timezone-conversion.php');
+$tz = new TimezoneConversion();                 
+print "\n Local:: " .$tz->getLocalDateTime();
+print "\n GMT ::"   .$tz->convertDateTime();
+$tz->setProperty('Timezone', 'IST');
+print "\n IST ::"   .$tz->convertDateTime();
+**/
+
+
+This class it's intended only for experimental/learning purposes.
+This class is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
